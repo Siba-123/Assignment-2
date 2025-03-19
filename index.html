@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Feedback Page</title>
+        <style>
+            fieldset{
+             background-color: rgb(7, 197, 239);
+             margin-top: 2rem;
+            }
+            Body{
+                background-color: bisque;
+            }
+           .container{
+            padding: 25px;
+            background-color: rgb(242, 250, 25);
+           }
+           input[type=text],input[type=password]{
+            width:100%;
+            margin:8px;
+            padding:12px;
+            border:2px;
+           }
+           .button{
+            background-color: bisque;
+           }
+           .label{
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1vh;
+            text-transform: uppercase;
+            color: black;
+            background-color: aliceblue;
+           }
+           
+    
+        </style>
+    </head>
+    <body> 
+        <div class="label">
+        <label>GLS.IT_Sol</label>
+        </div>
+        <fieldset>
+        <form action="feedback.php" method="post">
+            <center><h1>Feedback Form</h1></center>
+            
+
+        <div class="container">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter text here" name="name" required><br>
+            <label>E-mail:</label>
+            <input type="text" placeholder="Enter text here" name="email" required><br>
+            <label>Phone:</label>
+            <input type="text" placeholder="Enter text here" name="phone" required><br>
+            <label>Feedback:</label>
+            <input type="text" placeholder="Enter feedback here" name="feedback" required><br>
+            <blockquote>
+            <center><button type="Submit">Submit</button></center><br>
+        
+        </div>
+        </form>
+        </fieldset>
+    </body>
+</html>
